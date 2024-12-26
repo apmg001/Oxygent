@@ -1,0 +1,190 @@
+/* App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.app {
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
+}
+
+.form {
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff80;
+  border-radius: 10px;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"],
+input[type="number"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff3b2d;
+}
+
+.entries {
+  margin: 2rem auto;
+  max-width: 600px;
+  padding: 1rem;
+  background: #ffffff90;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.entry {
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem 0;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.entry p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.entry-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.entry-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s ease-in-out;
+}
+.entry-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.entry-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .form, .entries {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  input[type="text"], input[type="number"] {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+
+/* App.css */
+.app {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.entries {
+  margin-top: 20px;
+}
+
+.entry {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.entry-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.entry-enter-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.entry-exit {
+  opacity: 1;
+}
+
+.entry-exit-active {
+  opacity: 0;
+}
+
+
